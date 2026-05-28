@@ -1,0 +1,71 @@
+
+TOKENIZATION AND VOCABULARY CONSTRUCTION REPORT
+===============================================
+
+1. TOKENIZATION STRATEGY
+   - Method: Word-level tokenization (whitespace split)
+   - English: Convert to lowercase before splitting
+   - Urdu: Split on whitespace (preserve Unicode)
+
+2. SPECIAL TOKENS
+   - <pad> (Index 0): Padding token for sequence alignment
+   - <unk> (Index 1): Unknown token for OOV words
+   - <bos> (Index 2): Beginning of sequence marker
+   - <eos> (Index 3): End of sequence marker
+
+3. ENGLISH VOCABULARY
+   - Total Vocabulary Size: 6447
+   - Special Tokens: 4
+   - Unique Words: 6443
+   - Total Training Tokens: 149871
+   - Training Set Coverage: 100.00%
+
+4. URDU VOCABULARY
+   - Total Vocabulary Size: 7422
+   - Special Tokens: 4
+   - Unique Words: 7418
+   - Total Training Tokens: 168065
+   - Training Set Coverage: 100.00%
+
+5. TOP 10 ENGLISH WORDS
+    1. the                    8943 occurrences
+    2. and                    8605 occurrences
+    3. of                     4958 occurrences
+    4. that                   3048 occurrences
+    5. to                     2858 occurrences
+    6. he                     2548 occurrences
+    7. in                     2398 occurrences
+    8. i                      1992 occurrences
+    9. him                    1988 occurrences
+   10. unto                   1946 occurrences
+
+6. TOP 10 URDU WORDS
+    1. ۔                      7688 occurrences
+    2. اور                    6972 occurrences
+    3. کے                     5004 occurrences
+    4. سے                     4763 occurrences
+    5. میں                    4667 occurrences
+    6. اس                     4516 occurrences
+    7. کی                     3343 occurrences
+    8. ہے                     3317 occurrences
+    9. نے                     3136 occurrences
+   10. کو                     2989 occurrences
+
+7. OUTPUT FILES
+   Vocabularies (JSON):
+   - english_vocab.json (word → index mapping)
+   - urdu_vocab.json (word → index mapping)
+   - english_reverse_vocab.json (index → word mapping)
+   - urdu_reverse_vocab.json (index → word mapping)
+   
+   Vocabularies (Python Pickle):
+   - english_vocab.pkl
+   - urdu_vocab.pkl
+   - english_reverse_vocab.pkl
+   - urdu_reverse_vocab.pkl
+   
+   Metadata:
+   - vocab_metadata.json
+
+8. NEXT STEP
+   Proceed to Task 4: Sequence Encoding, Padding, and Batching

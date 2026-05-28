@@ -1,0 +1,35 @@
+{
+    "architecture": "Convolutional Denoising Autoencoder",
+    "input_shape": [
+        32,
+        32,
+        3
+    ],
+    "bottleneck_sizes": [
+        32,
+        64,
+        128,
+        256
+    ],
+    "encoder_architecture": {
+        "block_1": "Conv2D(32, 3x3, ReLU) \u2192 BatchNorm \u2192 Conv2D(32, 3x3, ReLU) \u2192 MaxPool(2x2)",
+        "block_2": "Conv2D(64, 3x3, ReLU) \u2192 BatchNorm \u2192 Conv2D(64, 3x3, ReLU) \u2192 MaxPool(2x2)",
+        "block_3": "Conv2D(128, 3x3, ReLU) \u2192 BatchNorm",
+        "bottleneck": "Flatten \u2192 Dense(bottleneck_size, ReLU)"
+    },
+    "decoder_architecture": {
+        "block_1": "Dense(8x8x128, ReLU) \u2192 Reshape(8,8,128) \u2192 Conv2D(128, 3x3, ReLU) \u2192 BatchNorm \u2192 UpSample(2x2)",
+        "block_2": "Conv2D(64, 3x3, ReLU) \u2192 BatchNorm \u2192 Conv2D(64, 3x3, ReLU) \u2192 UpSample(2x2)",
+        "block_3": "Conv2D(32, 3x3, ReLU) \u2192 BatchNorm \u2192 Conv2D(32, 3x3, ReLU)",
+        "output": "Conv2D(3, 3x3, Sigmoid)"
+    },
+    "activation_functions": {
+        "encoder_hidden": "ReLU - captures non-linear features",
+        "decoder_hidden": "ReLU - preserves feature information",
+        "decoder_output": "Sigmoid - squashes output to [0, 1] range",
+        "reasoning": "ReLU introduces non-linearity and sparsity, Sigmoid ensures valid image pixel range"
+    },
+    "loss_function": "Mean Squared Error (MSE) - reconstruction loss",
+    "optimizer": "Adam (learning_rate=0.001)",
+    "total_parameters_128": 2533571
+}

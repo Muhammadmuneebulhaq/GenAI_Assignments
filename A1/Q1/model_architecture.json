@@ -1,0 +1,9 @@
+{
+    "model_type": "Vanilla RNN Encoder-Decoder",
+    "encoder_vocab": 6447,
+    "decoder_vocab": 7422,
+    "embedding_dim": 128,
+    "hidden_dim": 256,
+    "num_layers": 2,
+    "dropout": 0.2
+}

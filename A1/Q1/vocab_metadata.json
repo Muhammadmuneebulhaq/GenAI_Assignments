@@ -1,0 +1,24 @@
+{
+    "english": {
+        "vocab_size": 6447,
+        "unique_words": 6443,
+        "coverage": 100.0
+    },
+    "urdu": {
+        "vocab_size": 7422,
+        "unique_words": 7418,
+        "coverage": 100.0
+    },
+    "special_tokens": {
+        "pad": "<pad>",
+        "unk": "<unk>",
+        "bos": "<bos>",
+        "eos": "<eos>"
+    },
+    "special_token_indices": {
+        "pad_idx": 0,
+        "unk_idx": 1,
+        "bos_idx": 2,
+        "eos_idx": 3
+    }
+}

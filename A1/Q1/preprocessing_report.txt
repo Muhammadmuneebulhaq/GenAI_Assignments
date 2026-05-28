@@ -1,0 +1,57 @@
+================================================================================
+DATA PREPROCESSING REPORT
+================================================================================
+
+DATASET INFORMATION
+--------------------------------------------------------------------------------
+Original samples: 9092
+Cleaned samples: 9082
+Removed samples: 10
+Retention rate: 99.89%
+
+ENGLISH TEXT STATISTICS
+--------------------------------------------------------------------------------
+Word count - Min: 1, Max: 68
+Word count - Average: 20.63, Median: 20
+Character count - Min: 3, Max: 351
+Character count - Average: 104.04
+
+URDU TEXT STATISTICS
+--------------------------------------------------------------------------------
+Word count - Min: 1, Max: 84
+Word count - Average: 23.14, Median: 23
+Character count - Min: 4, Max: 333
+Character count - Average: 95.39
+
+SAMPLE PAIRS (First 10)
+--------------------------------------------------------------------------------
+
+1. English: the book of the generation of jesus christ the son of david the son of abraham
+   Urdu:    یسوع مسیح ابن داود ابن ابرہام کا نسب نامہ
+
+2. English: abraham begat isaac and isaac begat jacob and jacob begat judas and his brethren
+   Urdu:    ابراہام سے اضحاق پیدا ہوا اور اضحاق سے یعقوب پیدا ہوا اور یعقوب سے یہوداہ اور اس کے بھائی پیدا ہوئے ۔
+
+3. English: and judas begat phares and zara of thamar and phares begat esrom and esrom begat aram
+   Urdu:    اور یہوداہ سے فارص اور زارح تمر سے پیدا ہوئے اور فارص سے حصرون پیدا ہوا اور حصرون سے رام پیدا ہوا ۔
+
+4. English: and aram begat aminadab and aminadab begat naasson and naasson begat salmon
+   Urdu:    اور رام سے عمینداب پیدا ہوا اور عمینداب سے نحسون پیدا ہوا اور نحسون سے سلمون پیدا ہوا ۔
+
+5. English: and salmon begat booz of rachab and booz begat obed of ruth and obed begat jesse
+   Urdu:    اور سلمون سے بوعز راحب سے پیدا ہوا اور بوعز سے عوبید روت سے پیدا ہوا اور عوبید سے یسّی پیدا ہوا ۔
+
+6. English: and jesse begat david the king and david the king begat solomon of her that had been the wife of urias
+   Urdu:    اور یسّی سے داود بادشاہ پیدا ہوا ۔ اور داود سے سلیمان اس عورت سے پیدا ہوا جو پہلے اوریاہ کی بیوی تھی ۔
+
+7. English: and solomon begat roboam and roboam begat abia and abia begat asa
+   Urdu:    اور سلیمان سے رحبعام پیدا ہوا اور رحبعام سے ابیاہ پیدا ہوا اور ابیاہ سے آسا پیدا ہوا ۔
+
+8. English: and asa begat josaphat and josaphat begat joram and joram begat ozias
+   Urdu:    اور آسا سے یہوسفط پیدا ہوا اور یہوسفط سے یورام پیدا ہوا اور یورام سے عزّیاہ پیدا ہوا ۔
+
+9. English: and ozias begat joatham and joatham begat achaz and achaz begat ezekias
+   Urdu:    اور عزّیاہ سے یوتام پیدا ہوا اور یوتام سے آخز پیدا ہوا اور آخز سےحزقیاہ پیدا ہوا ۔
+
+10. English: and ezekias begat manasses and manasses begat amon and amon begat josias
+   Urdu:    اور حزقیا سے منسّی پیدا ہوا اور منسّی سے امون پیدا ہوا اور امون سے یوسیاہ پیدا ہوا ۔

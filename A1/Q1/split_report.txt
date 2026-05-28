@@ -1,0 +1,37 @@
+
+TRAIN-VALIDATION-TEST SPLIT REPORT
+====================================
+
+1. SPLIT CONFIGURATION
+   - Method: Stratified random split
+   - Random Seed: 42 (for reproducibility)
+   - Train/Validation/Test Ratios: 80% / 10% / 10%
+
+2. DATASET STATISTICS
+   - Original Dataset: 9082 samples
+   - Train Set: 7265 samples (79.99%)
+   - Validation Set: 908 samples (10.00%)
+   - Test Set: 909 samples (10.01%)
+
+3. OVERLAP VERIFICATION
+   - Train-Validation Overlap: 0 (✅ clean)
+   - Train-Test Overlap: 0 (✅ clean)
+   - Validation-Test Overlap: 0 (✅ clean)
+   - Status: ✅ NO OVERLAPS - All partitions are independent
+
+4. OUTPUT FILES
+   CSV Files:
+   - train_set.csv
+   - validation_set.csv
+   - test_set.csv
+   
+   Excel Files:
+   - train_set.xlsx
+   - validation_set.xlsx
+   - test_set.xlsx
+   
+   Metadata:
+   - split_metadata.json
+
+5. NEXT STEP
+   Proceed to Task 3: Tokenization and Vocabulary Construction

@@ -1,0 +1,236 @@
+[
+  {
+    "Generative AI\nAssignment # 2":"Name:                                                                                                            Roll No",
+    "Unnamed: 1":"Marks",
+    "Unnamed: 2":"Self \nEvaluation",
+    "Unnamed: 3":"TA"
+  },
+  {
+    "Generative AI\nAssignment # 2":null,
+    "Unnamed: 1":null,
+    "Unnamed: 2":null,
+    "Unnamed: 3":null
+  },
+  {
+    "Generative AI\nAssignment # 2":"Question # 1 (75 Marks)",
+    "Unnamed: 1":null,
+    "Unnamed: 2":null,
+    "Unnamed: 3":null
+  },
+  {
+    "Generative AI\nAssignment # 2":"Data Preparation: Loading and preprocessing the Person Face Sketches dataset correctly",
+    "Unnamed: 1":7,
+    "Unnamed: 2":null,
+    "Unnamed: 3":null
+  },
+  {
+    "Generative AI\nAssignment # 2":"CycleGAN Model Implementation: Correct architecture setup, including generator and discriminator networks",
+    "Unnamed: 1":12,
+    "Unnamed: 2":null,
+    "Unnamed: 3":null
+  },
+  {
+    "Generative AI\nAssignment # 2":"Training CycleGAN: Proper use of adversarial loss, cycle consistency loss, and identity loss for stable training",
+    "Unnamed: 1":12,
+    "Unnamed: 2":null,
+    "Unnamed: 3":null
+  },
+  {
+    "Generative AI\nAssignment # 2":"Handling Training Stability: Using techniques such as learning rate scheduling, batch normalization, and memory optimization (e.g., dataset splitting)",
+    "Unnamed: 1":12,
+    "Unnamed: 2":null,
+    "Unnamed: 3":null
+  },
+  {
+    "Generative AI\nAssignment # 2":"Generating High-Quality Image-to-Image Translations: Converting sketches to faces and vice versa with minimal artifacts",
+    "Unnamed: 1":8,
+    "Unnamed: 2":null,
+    "Unnamed: 3":null
+  },
+  {
+    "Generative AI\nAssignment # 2":"Monitoring and Saving Model Checkpoints: Ensuring model weights are saved after every epoch and resuming training if needed",
+    "Unnamed: 1":8,
+    "Unnamed: 2":null,
+    "Unnamed: 3":null
+  },
+  {
+    "Generative AI\nAssignment # 2":"User Interface & Deployment: Creating a Flask-based UI (or similar) for real-time image conversion, handling image uploads, detecting input type (sketch or real face), ensuring smooth functionality without major errors or crashes",
+    "Unnamed: 1":10,
+    "Unnamed: 2":null,
+    "Unnamed: 3":null
+  },
+  {
+    "Generative AI\nAssignment # 2":"Final Evaluation: Visual comparison of generated images, discussion of model performance, and areas for improvement",
+    "Unnamed: 1":6,
+    "Unnamed: 2":null,
+    "Unnamed: 3":null
+  },
+  {
+    "Generative AI\nAssignment # 2":"Question # 2 (65 Marks)",
+    "Unnamed: 1":null,
+    "Unnamed: 2":null,
+    "Unnamed: 3":null
+  },
+  {
+    "Generative AI\nAssignment # 2":"Data Preparation: Selecting and preprocessing the dataset for training (Parallel Corpus, UMC005, or synthetic data)",
+    "Unnamed: 1":6,
+    "Unnamed: 2":null,
+    "Unnamed: 3":null
+  },
+  {
+    "Generative AI\nAssignment # 2":"Transformer Model Implementation: Correctly implementing the Transformer-based model for translation",
+    "Unnamed: 1":12,
+    "Unnamed: 2":null,
+    "Unnamed: 3":null
+  },
+  {
+    "Generative AI\nAssignment # 2":"Training Process: Fine-tuning hyperparameters (learning rate, batch size, epochs) and applying techniques like learning rate scheduling and gradient clipping",
+    "Unnamed: 1":12,
+    "Unnamed: 2":null,
+    "Unnamed: 3":null
+  },
+  {
+    "Generative AI\nAssignment # 2":"Evaluation Metrics: Assessing the model using BLEU scores and qualitative examples of translation quality",
+    "Unnamed: 1":8,
+    "Unnamed: 2":null,
+    "Unnamed: 3":null
+  },
+  {
+    "Generative AI\nAssignment # 2":"Use of Pre-trained Models: Fine-tuning multilingual models like mBART for improved translation quality",
+    "Unnamed: 1":7,
+    "Unnamed: 2":null,
+    "Unnamed: 3":null
+  },
+  {
+    "Generative AI\nAssignment # 2":"Data Augmentation: Applying data augmentation techniques to improve generalization",
+    "Unnamed: 1":7,
+    "Unnamed: 2":null,
+    "Unnamed: 3":null
+  },
+  {
+    "Generative AI\nAssignment # 2":"Subword Tokenization: Implementing methods like Byte Pair Encoding (BPE) for handling out-of-vocabulary words",
+    "Unnamed: 1":7,
+    "Unnamed: 2":null,
+    "Unnamed: 3":null
+  },
+  {
+    "Generative AI\nAssignment # 2":"Final Model Performance: Ensuring smooth training, avoiding overfitting, and presenting final results clearly",
+    "Unnamed: 1":6,
+    "Unnamed: 2":null,
+    "Unnamed: 3":null
+  },
+  {
+    "Generative AI\nAssignment # 2":"Question # 3 (85 Marks)",
+    "Unnamed: 1":null,
+    "Unnamed: 2":null,
+    "Unnamed: 3":null
+  },
+  {
+    "Generative AI\nAssignment # 2":"Dataset Handling & Preprocessing: Properly loading, preprocessing (normalization, augmentation), and splitting CIFAR-10 into train\/test sets",
+    "Unnamed: 1":6,
+    "Unnamed: 2":null,
+    "Unnamed: 3":null
+  },
+  {
+    "Generative AI\nAssignment # 2":"CNN Model Implementation: Designing and training a CNN for CIFAR-10 classification using best practices like batch normalization, dropout, and proper activation functions",
+    "Unnamed: 1":12,
+    "Unnamed: 2":null,
+    "Unnamed: 3":null
+  },
+  {
+    "Generative AI\nAssignment # 2":"Vision Transformer (ViT) Implementation: Implementing a ViT with core components (patching, linear embedding, positional encoding, self-attention, transformer layers, MLP head)",
+    "Unnamed: 1":14,
+    "Unnamed: 2":null,
+    "Unnamed: 3":null
+  },
+  {
+    "Generative AI\nAssignment # 2":"Training and Hyperparameter Tuning: Applying techniques such as data augmentation, learning rate scheduling, and early stopping while optimizing batch size, learning rate, layers, and heads",
+    "Unnamed: 1":10,
+    "Unnamed: 2":null,
+    "Unnamed: 3":null
+  },
+  {
+    "Generative AI\nAssignment # 2":"Model Evaluation Metrics: Evaluating models using accuracy, loss curves, confusion matrix, precision, recall, and F1-score",
+    "Unnamed: 1":10,
+    "Unnamed: 2":null,
+    "Unnamed: 3":null
+  },
+  {
+    "Generative AI\nAssignment # 2":"Fine-Tuning Pre-Trained ViT: Utilizing a pre-trained ViT from Hugging Face or Timm and comparing performance with implemented models",
+    "Unnamed: 1":8,
+    "Unnamed: 2":null,
+    "Unnamed: 3":null
+  },
+  {
+    "Generative AI\nAssignment # 2":"Performance Comparison: Comparing CNN and ViT in terms of accuracy, training time, complexity, generalization, and number of parameters",
+    "Unnamed: 1":8,
+    "Unnamed: 2":null,
+    "Unnamed: 3":null
+  },
+  {
+    "Generative AI\nAssignment # 2":"Attention vs. Spatial Modeling Analysis: Discussing the effectiveness of ViT's attention mechanism versus CNN's spatial feature extraction",
+    "Unnamed: 1":7,
+    "Unnamed: 2":null,
+    "Unnamed: 3":null
+  },
+  {
+    "Generative AI\nAssignment # 2":"Visualizations: Providing training\/validation accuracy and loss curves, confusion matrices, and example predictions",
+    "Unnamed: 1":6,
+    "Unnamed: 2":null,
+    "Unnamed: 3":null
+  },
+  {
+    "Generative AI\nAssignment # 2":"Final Report & Interpretation: Summarizing insights, key takeaways, and presenting well-structured conclusions",
+    "Unnamed: 1":4,
+    "Unnamed: 2":null,
+    "Unnamed: 3":null
+  },
+  {
+    "Generative AI\nAssignment # 2":"Report Evaluation",
+    "Unnamed: 1":null,
+    "Unnamed: 2":null,
+    "Unnamed: 3":null
+  },
+  {
+    "Generative AI\nAssignment # 2":" Report: The report should be written on  Overleaf and follow Springer LNCS Template. Write a comprehensive report include all details for each of the above questions and explain all the details that you performed. Describe the technical details of the experiments, including data preprocessing, model architecture, training process, and evaluation metrics,Discuss the results, including the accuracy achieved and any notable findings. ",
+    "Unnamed: 1":30,
+    "Unnamed: 2":null,
+    "Unnamed: 3":null
+  },
+  {
+    "Generative AI\nAssignment # 2":"Code Evaluation",
+    "Unnamed: 1":null,
+    "Unnamed: 2":null,
+    "Unnamed: 3":null
+  },
+  {
+    "Generative AI\nAssignment # 2":"Code Quality and Documentation with proper comments for each function",
+    "Unnamed: 1":15,
+    "Unnamed: 2":null,
+    "Unnamed: 3":null
+  },
+  {
+    "Generative AI\nAssignment # 2":"Organize the code into functions or modules for clarity.",
+    "Unnamed: 1":10,
+    "Unnamed: 2":null,
+    "Unnamed: 3":null
+  },
+  {
+    "Generative AI\nAssignment # 2":"Any extra score based on your observation (Only for TA)\nJustification:",
+    "Unnamed: 1":10,
+    "Unnamed: 2":null,
+    "Unnamed: 3":null
+  },
+  {
+    "Generative AI\nAssignment # 2":"Marks",
+    "Unnamed: 1":null,
+    "Unnamed: 2":null,
+    "Unnamed: 3":null
+  },
+  {
+    "Generative AI\nAssignment # 2":"Total Marks",
+    "Unnamed: 1":290,
+    "Unnamed: 2":null,
+    "Unnamed: 3":null
+  }
+]

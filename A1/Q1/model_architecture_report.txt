@@ -1,0 +1,102 @@
+
+VANILLA RNN ENCODER-DECODER ARCHITECTURE REPORT
+================================================
+
+1. MODEL OVERVIEW
+   Type: Sequence-to-Sequence (Seq2Seq) with vanilla RNN
+   Task: English-to-Urdu Neural Machine Translation
+   
+2. ENCODER ARCHITECTURE
+   Component: Vanilla RNN (SimpleRNN)
+   
+   Structure:
+   - Embedding Layer
+     * Input vocab: 11,421 English tokens
+     * Embedding dim: 128
+     * Output: [batch, seq_len, 128]
+   
+   - Layer 1: SimpleRNN(256 units, return_sequences=True, dropout=0.0)
+     * Input: [batch, seq_len, 128]
+     * Output: [batch, seq_len, 256]
+   
+   - Layer 2: SimpleRNN(256 units, return_sequences=False, dropout=0.2)
+     * Input: [batch, seq_len, 256]
+     * Output (context): [batch, 256]
+   
+   Purpose: Compress English sentence into context vector
+
+3. DECODER ARCHITECTURE
+   Component: Vanilla RNN (SimpleRNN)
+   
+   Structure:
+   - Embedding Layer
+     * Input vocab: 7,534 Urdu tokens
+     * Embedding dim: 128
+     * Output: [batch, seq_len, 128]
+   
+   - Layer 1: SimpleRNN(256 units, return_sequences=True, dropout=0.0)
+     * Initialized with encoder context
+     * Input: [batch, seq_len, 128]
+     * Output: [batch, seq_len, 256]
+   
+   - Layer 2: SimpleRNN(256 units, return_sequences=True, dropout=0.2)
+     * Initialized with encoder state
+     * Input: [batch, seq_len, 256]
+     * Output: [batch, seq_len, 256]
+   
+   - Output Projection: Dense(7,534)
+     * Converts to vocabulary logits
+     * Output: [batch, seq_len, 7534]
+   
+   Purpose: Generate Urdu translation using encoder context
+
+4. KEY FEATURES
+   ✓ Vanilla RNN (SimpleRNN) only - NO LSTM/GRU
+   ✓ Stacked architecture (2 layers) for better representation
+   ✓ Dropout regularization for generalization
+   ✓ Embedding masking to ignore padding
+   ✓ Context vector carries English semantics
+   ✓ Teacher forcing during training
+
+5. PARAMETER SUMMARY
+   Encoder Embedding: 11,421 × 128 = 1,461,888 params
+   Encoder RNN Layer 1: ~192,000 params
+   Encoder RNN Layer 2: ~192,000 params
+   
+   Decoder Embedding: 7,534 × 128 = 964,352 params
+   Decoder RNN Layer 1: ~192,000 params
+   Decoder RNN Layer 2: ~192,000 params
+   Output Projection: 256 × 7,534 + 7,534 = 1,928,834 params
+   
+   Total Approximate: ~6.1M parameters
+
+6. TRAINING SETUP
+   Loss Function: Sparse Categorical Crossentropy
+   Optimization: Adam optimizer
+   Masking: Padding tokens (index 0) ignored in loss
+   Batch Size: 32
+   Gradient Clipping: Will be implemented in Task 6
+
+7. INFERENCE STRATEGY
+   - Encoder: Process entire English sentence once
+   - Decoder: Generate Urdu tokens sequentially
+     * Start with <bos> token
+     * Use greedy decoding or beam search
+     * Stop at <eos> or max length
+
+8. LIMITATIONS OF VANILLA RNN
+   ⚠ Vanishing Gradient: Difficulty learning long dependencies
+   ⚠ No Persistent Memory: Independent RNN steps
+   ⚠ Information Bottleneck: Single context vector
+   
+   (These are mitigated in modern architectures like LSTM/Transformer,
+    but this is a research-based assignment using vanilla RNN only)
+
+9. FILES GENERATED
+   - model_architecture.json: Architecture configuration
+   - model_architecture_report.txt: This report
+   - prebuilt_model.py: Python source code for model
+
+10. NEXT STEPS
+    Task 6: Model Training and Experiment Tracking
+    Task 7: Hyperparameter Tuning and Experimental Study

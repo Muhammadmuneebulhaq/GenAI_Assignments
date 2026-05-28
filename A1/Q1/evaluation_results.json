@@ -1,0 +1,20 @@
+{
+    "test_samples_evaluated": 10,
+    "average_bleu_score": 0.3156568031571598,
+    "min_bleu": 0.24363502971184062,
+    "max_bleu": 0.38767857660247906,
+    "sample_translations": [
+        {
+            "english": "hello world",
+            "urdu_reference": "\u0627\u0644\u0633\u0644\u0627\u0645 \u0639\u0644\u06cc\u06a9\u0645 \u062f\u0646\u06cc\u0627",
+            "urdu_generated": "\u0627\u0644\u0633\u0644\u0627\u0645 \u0639\u0644\u06cc\u06a9\u0645 \u062f\u0646\u06cc\u0627",
+            "bleu": 0.24363502971184062
+        },
+        {
+            "english": "how are you",
+            "urdu_reference": "\u062a\u0645 \u06a9\u06cc\u0633\u06d2 \u06c1\u0648",
+            "urdu_generated": "\u062a\u0645 \u06a9\u06cc\u0633\u06d2",
+            "bleu": 0.38767857660247906
+        }
+    ]
+}

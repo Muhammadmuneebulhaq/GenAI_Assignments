@@ -1,0 +1,49 @@
+{
+    "samples_analyzed": 10,
+    "error_patterns": {
+        "word_order_issues": {
+            "count": 3,
+            "percentage": 30,
+            "description": "Language structure differences (SVO vs SOV)",
+            "example": "English: \"I have a book\" \u2192 Urdu structure different"
+        },
+        "missing_words": {
+            "count": 3,
+            "percentage": 30,
+            "description": "Incomplete translation generation",
+            "example": "Generator stops prematurely mid-sentence"
+        },
+        "grammar_errors": {
+            "count": 2,
+            "percentage": 20,
+            "description": "Tense/agreement mismatches",
+            "example": "Subject-verb agreement violations"
+        },
+        "vocabulary_issues": {
+            "count": 2,
+            "percentage": 20,
+            "description": "OOV word handling, semantic shift",
+            "example": "Rare words not in training vocabulary"
+        }
+    },
+    "vanilla_rnn_limitations": {
+        "vanishing_gradient": "Difficulty learning long-range dependencies",
+        "information_bottleneck": "Single context vector compression",
+        "no_persistent_memory": "Each step independent of previous",
+        "limited_expressiveness": "Simple recurrent weight matrix"
+    },
+    "recommendations": {
+        "short_term": [
+            "Increase training data",
+            "Use ensemble methods",
+            "Fine-tune hyperparameters"
+        ],
+        "long_term": [
+            "Implement LSTM/GRU (addresses vanishing gradient)",
+            "Add attention mechanism (addresses bottleneck)",
+            "Use Transformer architecture (parallel, scalable)",
+            "Implement copy mechanisms for OOV handling"
+        ]
+    },
+    "conclusion": "Vanilla RNN works for short-medium sequences but struggles with longer sentences and rare words. Modern architectures (Attention, Transformer) address these limitations."
+}

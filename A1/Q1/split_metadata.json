@@ -1,0 +1,21 @@
+{
+    "random_seed": 42,
+    "total_samples": 9082,
+    "train": {
+        "samples": 7265,
+        "percentage": 79.99339352565514
+    },
+    "validation": {
+        "samples": 908,
+        "percentage": 9.997797841885047
+    },
+    "test": {
+        "samples": 909,
+        "percentage": 10.008808632459811
+    },
+    "overlaps": {
+        "train_validation": 0,
+        "train_test": 0,
+        "validation_test": 0
+    }
+}

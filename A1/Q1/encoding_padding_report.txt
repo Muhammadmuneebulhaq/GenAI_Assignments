@@ -1,0 +1,85 @@
+
+SEQUENCE ENCODING, PADDING, AND BATCHING REPORT
+===============================================
+
+1. ENCODING STRATEGY
+   - Special Tokens Added:
+     * BOS (Begin of Sequence, Index 2): Added at start
+     * EOS (End of Sequence, Index 3): Added at end
+     * UNK (Unknown, Index 1): For out-of-vocabulary words
+     * PAD (Padding, Index 0): For sequence alignment
+
+2. MAXIMUM SEQUENCE LENGTHS
+   Train Set:
+   - English: 70 tokens
+   - Urdu: 90 tokens
+   
+   Validation Set:
+   - English: 60 tokens
+   - Urdu: 60 tokens
+   
+   Test Set:
+   - English: 60 tokens
+   - Urdu: 70 tokens
+
+3. PADDING STRATEGY
+   - Method: Right padding (pad after sequence)
+   - Mask Generation: Binary masks (1 for real tokens, 0 for padding)
+   - Purpose: Attention masks enable model to ignore padding
+
+4. DATASET SHAPES (After Encoding & Padding)
+   Train Set:
+   - Encoder inputs: (7265, 70)
+   - Decoder inputs: (7265, 90)
+   - Decoder targets: (7265, 90)
+   - Encoder masks: (7265, 70)
+   - Decoder masks: (7265, 90)
+   
+   Validation Set:
+   - Encoder inputs: (908, 60)
+   - Decoder inputs: (908, 60)
+   
+   Test Set:
+   - Encoder inputs: (909, 60)
+   - Decoder inputs: (909, 70)
+
+5. BATCHING PIPELINE
+   - Batch Size: 32 samples
+   - Shuffle Training: Yes (for randomization)
+   - Shuffle Validation/Test: No (for reproducibility)
+   
+   Number of Batches:
+   - Train: 228 batches
+   - Validation: 29 batches
+   - Test: 29 batches
+
+6. OUTPUT FILES
+   Encoded Data (NumPy):
+   - train_encoder_inputs.npy
+   - train_decoder_inputs.npy
+   - train_decoder_targets.npy
+   - train_encoder_masks.npy
+   - train_decoder_masks.npy
+   - validation_encoder_inputs.npy
+   - validation_decoder_inputs.npy
+   - validation_decoder_targets.npy
+   - validation_encoder_masks.npy
+   - validation_decoder_masks.npy
+   - test_encoder_inputs.npy
+   - test_decoder_inputs.npy
+   - test_decoder_targets.npy
+   - test_encoder_masks.npy
+   - test_decoder_masks.npy
+   
+   Configuration Files (JSON):
+   - train_config.json
+   - validation_config.json
+   - test_config.json
+   
+   Data Loaders (Python Pickle):
+   - train_loader.pkl
+   - validation_loader.pkl
+   - test_loader.pkl
+
+7. NEXT STEP
+   Proceed to Task 5: Vanilla RNN Encoder-Decoder Model Implementation

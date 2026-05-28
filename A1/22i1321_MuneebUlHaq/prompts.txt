@@ -1,0 +1,12 @@
+ASSIGNMENT PROMPTS - GenAI A1
+=============================
+
+Q1/Q2/Q3 + give me step by instructions to do the above assignment to gemini
+
+
+write a technical report for the above question : in the same session on copilot
+
+for first question: copilot's report + readme files + training images + LNCS template + write me a technical report in the above format TO grok.
+
+
+for second and third question: copilot's report + readme files + training images + existing report + write a technical report for question (no) and integrate with the above report 

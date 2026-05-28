@@ -1,0 +1,16 @@
+import os
+en = open('Dataset/english-corpus.txt', 'r', encoding='utf-8').readlines()
+ur = open('Dataset/urdu-corpus.txt', 'r', encoding='utf-8').readlines()
+print(f"English lines: {len(en)}")
+print(f"Urdu lines: {len(ur)}")
+avg_en = sum(len(l.split()) for l in en) / len(en)
+avg_ur = sum(len(l.split()) for l in ur) / len(ur)
+print(f"Avg English words per line: {avg_en:.1f}")
+print(f"Avg Urdu words per line: {avg_ur:.1f}")
+max_en = max(len(l.split()) for l in en)
+max_ur = max(len(l.split()) for l in ur)
+print(f"Max English words: {max_en}")
+print(f"Max Urdu words: {max_ur}")
+print("Sample English lines:")
+for i in range(5):
+    print(f"  {i}: {en[i].strip()}")
